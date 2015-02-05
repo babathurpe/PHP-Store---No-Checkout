@@ -1,0 +1,25 @@
+/* CSS Document */
+#art-PostContent ,#headerme
+{
+  display: none;
+  position: absolute;
+  top:0px;
+  left:0px;
+  right:0px;
+  background-image:url('images/back.png');
+  height: 40px;
+  border: 0px;
+  
+   
+}
+
+#textme
+{
+	margin-top: 20px;
+	font-size: 16px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	line-height: 0px;
+	text-align: center;
+	font-weight: bold;
+	
+}

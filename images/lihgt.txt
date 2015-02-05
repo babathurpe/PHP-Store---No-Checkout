@@ -1,0 +1,49 @@
+How to Use
+Part 1 - Setup
+
+   1. Lightbox 2 uses the Prototype Framework and Scriptaculous Effects Library. You will need to include these three Javascript files in your header (in this order).
+
+      <script type="text/javascript" src="js/prototype.js"></script>
+      <script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
+      <script type="text/javascript" src="js/lightbox.js"></script>
+
+   2. Include the Lightbox CSS file (or append your active stylesheet with the Lightbox styles).
+
+      <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+
+   3. Check the CSS and make sure the referenced prev.gif and next.gif files are in the right location. Also, make sure the loading.gif and close.gif files as referenced near the top of the lightbox.js file are in the right location.
+
+Part 2 - Activate
+
+   1. Add a rel="lightbox" attribute to any link tag to activate the lightbox. For example:
+
+      <a href="images/image-1.jpg" rel="lightbox" title="my caption">image #1</a>
+
+      Optional: Use the title attribute if you want to show a caption.
+   2. If you have a set of related images that you would like to group, follow step one but additionally include a group name between square brackets in the rel attribute. For example:
+
+      <a href="images/image-1.jpg" rel="lightbox[roadtrip]">image #1</a>
+      <a href="images/image-2.jpg" rel="lightbox[roadtrip]">image #2</a>
+      <a href="images/image-3.jpg" rel="lightbox[roadtrip]">image #3</a>
+
+      No limits to the number of image sets per page or how many images are allowed in each set. Go nuts!
+
+Download
+
+    * download Lightbox Lightbox v2.04
+
+Changelog
+
+    * v2.04 - 3/9/08
+          o NEW - Upgraded Prototype from v1.4 to v1.6.0.2
+          o NEW - Moved label text into configuration for easier localization
+          o UPDATED - Code cleaned up. Respect for the global namespace and native javascript objects.
+          o FIXED - Caption displays as "null" when viewing an uncaptioned image after viewing a captioned image.
+          o FIXED - Clicking 'close' button shifts layout as link focus' dotted line appears.
+    * v2.03.3 - 5/21/07 - Support for horizontally scrolling pages. Added updateImageList method for ajax'y pages.
+    * v2.03.2 - 4/30/07 - Fixed animated gif support in IE/Opera.
+    * v2.03.1 - 4/18/07 - Fixed embed hiding. Overlay opacity var added to config. Image sets w/Imagemaps fix. Clearfix removed.
+    * v2.03 - 4/10/07 - Improved keyboard navigation. Animation off toggle. Hides Flash movies under overlay. Imagemap support. Valid CSS.
+    * v2.02 - Fixed layout issues caused by multiline captions. Added keyboard navigation.
+    * v2.01 - Centering in IE6 (any DOCTYPE) fixed. Smoothed out resize transition.
+
